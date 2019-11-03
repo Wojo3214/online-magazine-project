@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="If you always imagine yourself in Paris or Barcelona but you don't have money, you're in a good place!">
+    <meta name="keywords" content="travelling, travel, budget travelling, trip, holiday, apps, Poland, Portugal, Iceland, backpack, backpacking, hitchhiking, plane, summer holiday">
+
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
+
+    <title>Travel more for less</title>
+</head>
+<body>
+    <header class="top-sub">
+        <div class="top-all top-all-big">
+            <div class="logo-container logo-con-sm">
+                <a href="index.html"><img src="img/plane-solid1.svg" alt="logo">
+                    Travellers</a>
+            </div>
+            <nav class="nav-big-size nav-small-size">
+                <div class="nav-btn nav-btn-target">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ol class="nav-content">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="blog.html" class="nav-item">Blog</a></li>
+                    <li><a href="news.html" class="nav-item">News</a></li>
+                    <li><a href="places.html" class="nav-item">Places to see</a></li>
+                    <li><a href="apps.html" class="nav-item">Apps</a></li>
+                    <li><a href="#" class="nav-item">About me</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <header class="article-header">
+                <div class="breadcrumbs">
+                    <a href="blog.html" class="breadcrumbs-last">Blog</a><span class="breadcrumbs-current-place">></span><span class="breadcrumbs-current-place">Travel more for less</span>
+                </div>
+                <img src="img/plane.jpg" alt="img">
+                <p class="img-info">Author: John Smith</p>
+
+            </header>
+            <div class="article-title">
+                <h2>Travel more for less</h2>
+                <span class="article-info">Posted on: 31 Oct 2019</span>
+                <span class="article-info">By Wojciech Dzwończyk</span>
+            </div>
+            <div class="blog-container">
+                <p class="article-text">Many times you wanted go to visit another country but you didn’t have enough money to do that (especially when you’re a student). Don’t worry! This article will help you to do that with low budget!</p>
+
+                <p class="article-text">Nowadays, we live in the world when you have access to everything you want. First of all, I want to explain you don’t need to have a fortune to travel. Only, you must be adroit and have a little more time than normally.</p>
+
+                <h4 class="article-headings">How to find cheap flight tickets?</h4>
+
+                <p class="article-text">Let’s start from the looking for a flight tickets. I usually use Ryanair if I travel in Europe however I recommend skyscanner.com website (or app on your phone), KAYAK or momondo. It enables you to find a flight which you’re interested easily. Looking for a tickets should be started 3-4 months before your travel and not during holiday and weekends. It’s the most convenient time to save money.</p>
+
+                <p class="article-text">There is another one thing which you have to remember. If comes about Ryanair or other company’s websites you have to know that they check your IP address and they can show you higher price than others. You can think that it’s unfair but the truth is that, more often you check one flight more confident they are that you will be able to pay more money.</p>
+
+                <h4 class="article-headings">Where should I look for accommodation?</h4>
+
+                <p class="article-text">If you don’t need 4-5 star hotel, there are other cheap options to finding not expensive roof over your head. My first proposition is couchsurfing. This is an app/website where people announce that they can host you in your house for free. But remember that you shouldn’t treat them like a hotel because it isn’t. But it would be cool to repay anyway so you can bring something from your country for a host.</p>
+
+                <p class="article-text">Another one option is Airbnb. The main benefit of this solution is that you are able to find a cheap houses, hostels, rooms with decent prices. Do you need a house for two people in Paris? If you make a good research you will find a places for only 20 euro per night. What is more, you can usually negotiate prices with which hosts.<br>
+                Get a discount on your first staying at Airbnb’s place </p>
+
+                <h4 class="article-headings">Other ideas</h4>
+
+                <p class="article-text">Okey! We have accommodation and flight tickets, but what if you don’t want to travel by plane? There is another options like train or hitchhiking. What about first one? It’s worth to know that many train companies have got discounts for student (sometimes even 50%). That’s why I recommend you to create and order ISIC card (International Student Identity Card). This card is issued to students  in over 130 countries. Thanks that everyone knows that you are a student entitled to discounts in all these countries. The costs in Denmark is 303 kr.</p>
+
+                <p class="article-text">If you don’t like travelling by plane you can choose hitchhiking. However, it requires from you courage as you will spend many time with person or people who you don’t know. You never know who you’ll meet on your way. That’s why your phone should have always full battery and save emergency number.</p>
+
+                <p class="article-text">To sum up, I hope these all options and suggests will help you to start travelling without selling a car or taking a loan. Budget travelling enables you to meet new people, get to know their customs and traditions. That’s why I recommend it so much. Have fun!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-instagram"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-twitter"></i></a></span>
+            <p>All Copywrite reserved 2019</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+         jQuery(document).ready(function($){
+            $( ".nav-btn" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideUp();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+         });
+    </script>
+</body>
+</html>

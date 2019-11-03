@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="If you always imagine yourself in Paris or Barcelona but you don't have money, you're in a good place!">
+    <meta name="keywords" content="travelling, travel, budget travelling, trip, holiday, apps, Poland, Portugal, Iceland, backpack, backpacking, hitchhiking, plane, summer holiday">
+
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
+
+    <title>Travellers - usefull apps</title>
+</head>
+<body>
+    <header class="top-sub">
+        <div class="top-all top-all-big">
+            <div class="logo-container logo-con-sm">
+                <a href="index.html"><img src="img/plane-solid1.svg" alt="logo">
+                    Travellers</a>
+            </div>
+            <nav class="nav-big-size nav-small-size">
+                <div class="nav-btn nav-btn-target">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ol class="nav-content">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="blog.html" class="nav-item">Blog</a></li>
+                    <li><a href="news.html" class="nav-item">News</a></li>
+                    <li><a href="places.html" class="nav-item">Places to see</a></li>
+                    <li><a href="apps.html" class="nav-item">Apps</a></li>
+                    <li><a href="#" class="nav-item">About me</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <header>
+                <h2>Apps</h2>
+            </header>
+            <div class="app-container">
+                <div class="app-category">
+                    <h5>Accommodation</h5>
+                    <button class="show1"><i class="fas fa-chevron-right"></i></button>
+                    <div class="apps" id="app-accommodation">
+                        <ul class="apps-list">
+                            <li>Airbnb</li>
+                            <p>App/website which enables you to find a places in all the world for decent price. Thanks that you can save a lot of money and spend them for more atractives. Because there are many private houses or rooms you can try to negotiate the price. To sum up, there is a huge possibility that you spend your time in beautiful place for low price. If you use this link, you’ll get 303 kr discount on your first app using.</p>
+                            <li>Couchsurfing</li>
+                            <p>It’s a social platform where people from around the world announce that they can host you in their private houses. Its purpose is helping each other and getting new people and their cultures. What’s the best you don’t have to pay for it. However, remember to not treat them as hotel as it isn’t.</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="app-category">
+                    <h5>Flight search</h5>
+                    <button class="show2"><i class="fas fa-chevron-right"></i></button>
+                    <div class="apps" id="app-flight">
+                        <ul class="apps-list">
+                            <li>Skyscanner</li>
+                            <p>One of the best flight search which makes possible to find a best prices for your flight in one of the fastest ways. Thanks many options which are include in this app you can find them not only flight tickets but also hotels and tour suggestions. However, I recommend find tickets in this app and after that buy once on air carrier’s website. It will be cheap as you’ll not pay for intermediary.</p>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="app-category">
+                    <h5>Finance</h5>
+                    <button class="show3"><i class="fas fa-chevron-right"></i></button>
+                    <div class="apps" id="app-finance">
+                        <ul class="apps-list">
+                            <li>Revolut</li>
+                            <p>Is a FinTech company with smartphone app, which enable them to manage their finance and exchange money within few seconds. Very briefly this app enables you transfer your money in 25 currencies and pay in 120 currencies without any extra fees. Moreover, you can order physical card if you prefer paying  by card. If you want free card just <a href="#">click here</a>.</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="app-category">
+                    <h5>Food</h5>
+                    <button class="show4"><i class="fas fa-chevron-right"></i></button>
+                    <div class="apps" id="app-food">
+                        <ul class="apps-list">
+                            <li>TooGoodToGo</li>
+                            <p>it’s a startup which fights with food wasting. Thanks that you can buy a food for lower price and safe food at the same time.</p>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-instagram"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-twitter"></i></a></span>
+            <p>All Copywrite reserved 2019</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+         jQuery(document).ready(function($){
+            $( ".nav-btn" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideUp();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+
+             $( ".show1" ).click(function(e) {
+                e.preventDefault();
+                    $("#app-accommodation").not("#app-accommodation").slideUp();
+                    $( "#app-accommodation" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".show2" ).click(function(e) {
+                e.preventDefault();
+                    $("#app-flight").not("#app-flight").slideUp();
+                    $( "#app-flight" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".show3" ).click(function(e) {
+                e.preventDefault();
+                    $("#app-finance").not("#app-finance").slideUp();
+                    $( "#app-finance" ).slideToggle( "slow", function() {
+                });
+             });
+             $( ".show4" ).click(function(e) {
+                e.preventDefault();
+                    $("#app-food").not("#app-food").slideUp();
+                    $( "#app-food" ).slideToggle( "slow", function() {
+                });
+             });
+         });
+    </script>
+</body>
+</html>

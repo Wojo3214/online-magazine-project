@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="If you always imagine yourself in Paris or Barcelona but you don't have money, you're in a good place!">
+    <meta name="keywords" content="travelling, travel, budget travelling, trip, holiday, apps, Poland, Portugal, Iceland, backpack, backpacking, hitchhiking, plane, summer holiday">
+
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
+
+    <title>Travellers - places to see</title>
+</head>
+<body>
+    <header class="top-sub">
+        <div class="top-all top-all-big">
+            <div class="logo-container logo-con-sm">
+                <a href="index.html"><img src="img/plane-solid1.svg" alt="logo">
+                    Travellers</a>
+            </div>
+            <nav class="nav-big-size nav-small-size">
+                <div class="nav-btn nav-btn-target">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ol class="nav-content">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="blog.html" class="nav-item">Blog</a></li>
+                    <li><a href="news.html" class="nav-item">News</a></li>
+                    <li><a href="places.html" class="nav-item">Places to see</a></li>
+                    <li><a href="apps.html" class="nav-item">Apps</a></li>
+                    <li><a href="#" class="nav-item">About me</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <header>
+                <h2>Places to see</h2>
+            </header>
+            <div class="blog-container">
+                <div class="search">
+                    <input type="search" class="search-input" placeholder="Search...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="all-articles">
+                    <article class="article-content-country">
+                        <img src="img/car1.jpg" alt="car">
+                        <h3 class="country-name">Poland</h3>
+                    </article>
+                    <article class="article-content-country">
+                        <img src="img/car1.jpg" alt="car">
+                        <h3 class="country-name">Portugal</h3>
+                    </article>
+                    <article class="article-content-country">
+                        <img src="img/car1.jpg" alt="car">
+                        <h3 class="country-name">Iceland</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-instagram"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-twitter"></i></a></span>
+            <p>All Copywrite reserved 2019</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+         jQuery(document).ready(function($){
+            $( ".nav-btn" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideUp();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+         });
+    </script>
+</body>
+</html>
