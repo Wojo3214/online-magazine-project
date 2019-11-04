@@ -208,7 +208,7 @@ h2{
 /***FRONT PAGE QUOTE***/
 
 #quote{
-    background-image: url(img/plane.jpg);
+    background-image: url(img/plane1.jpg);
     background-position: center;
     background-size: cover;
     height: 400px;
@@ -468,6 +468,9 @@ footer{
     margin-top: 15px;
 }
 
+.app-more{
+    text-decoration: underline;
+}
 
 /******RESPONSIVE******/
 
