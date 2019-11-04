@@ -470,6 +470,7 @@ footer{
 
 .app-more{
     text-decoration: underline;
+    color: #1B9FEB;
 }
 
 /******RESPONSIVE******/
@@ -664,7 +665,4 @@ footer{
         padding: 40px 10px;
     }
 }
-
-
-
 
