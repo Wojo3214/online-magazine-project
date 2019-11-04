@@ -13,7 +13,7 @@ body{
 
 .top{
     height: 100vh;
-    background-image: url(img/world.jpg);
+    background-image: url(img/world1.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -241,7 +241,7 @@ h2{
 /***FRONT PAGE NEWSLETTER***/
 
 #newsletter{
-    background-image: url(img/tickets.jpg);
+    background-image: url(img/tickets1.jpg);
     background-position: center;
     background-size: cover;
     height: 300px;
