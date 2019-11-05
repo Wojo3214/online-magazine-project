@@ -312,16 +312,8 @@ footer{
     margin: 0 5px;
 }
 
-.some-link:nth-child(1) i:hover{
+.some-link i:hover{
     color: #3b5998;
-}
-
-.some-link:nth-child(2) i:hover{
-    color: #c32aa3;
-}
-
-.some-link:nth-child(3) i:hover{
-    color: #1da1f2;
 }
 
 .some-link i{
@@ -506,7 +498,7 @@ footer{
 
     .article-header img{
         width: 100%;
-        height: 200px;
+        height: auto;
     }
 }
 
