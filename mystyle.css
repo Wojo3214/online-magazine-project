@@ -4,15 +4,26 @@
     border: 0;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.25em;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+main{
+    flex: 1 0 auto;
 }
 
 /***FRONT PAGE HEADER***/
 
 .top{
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(img/world1.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -294,6 +305,7 @@ input[type="submit"]:hover{
 footer{
     background-color: #3B3B35;
     height: 200px;
+    flex-shrink: 0;
 }
 
 .social-media{
@@ -425,7 +437,6 @@ footer{
     float: right;
     width: 30px;
     height: 30px;
-    margin-right: 10px;
 }
 
 .app-category button:hover{
@@ -451,6 +462,11 @@ footer{
 .apps-list{
     list-style-type: none;
     padding: 0 10px;
+}
+
+.apps-list img{
+    display: block;
+    margin: 15px auto 0 auto;
 }
 
 .apps-list > li {
