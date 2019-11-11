@@ -6,6 +6,7 @@
 
 html{
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -108,13 +109,13 @@ main{
 }
 
 .nav-btn-target:hover > .line:nth-child(1){
-    transform: rotate(45deg) translateY(9px) translateX(2px);
+    opacity: 0;
 }
 .nav-btn-target:hover > .line:nth-child(3){
-    transform: rotate(-45deg) translateY(-6px);
+    transform: rotate(-45deg) translateY(-5px);
 }
 .nav-btn-target:hover > .line:nth-child(2){
-    opacity: 0;
+    transform: rotate(45deg) translateY(4px);
 }
 
 .logo-con-sm{
@@ -156,7 +157,7 @@ h2{
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
 }
 
 .article-content{
@@ -201,6 +202,11 @@ h2{
 
 .more:hover{
     color: #00A48A;
+}
+
+.link-to-article{
+    display: block;
+    width: 100%;
 }
 
 
@@ -304,8 +310,10 @@ input[type="submit"]:hover{
 
 footer{
     background-color: #3B3B35;
-    height: 200px;
+    height: 225px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-media{
@@ -316,7 +324,7 @@ footer{
     font-size: 15px;
     box-sizing: border-box;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .some-link{
@@ -325,7 +333,7 @@ footer{
 }
 
 .some-link i:hover{
-    color: #3b5998;
+    color: #1B9FEB;
 }
 
 .some-link i{
@@ -337,6 +345,27 @@ footer{
     font-size: 12px;
 }
 
+.scroll-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 0 auto;
+    background-color: #73706E;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.scroll-btn i{
+    transform: rotate(-90deg);
+    font-size: 20px;
+    color: #3B3B35;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+.scroll-btn:hover{
+    background-color: #00A48A;
+}
 
 /***BLOG/NEWS SUBPAGE***/
 .search-input{
@@ -411,6 +440,31 @@ footer{
     text-align: center;
 }
 
+.article-country{
+    text-decoration: none;
+    color: #3B3B35;
+}
+
+.article-country:hover{
+    text-decoration: underline;
+    color: #3B3B35;
+}
+
+.article-images{
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article-images div{
+    margin: 20px 10px;
+}
+
+.country-place-img{
+    width: 100%;
+    height: auto;
+}
 
 /***APPS SUBPAGE***/
 
@@ -623,6 +677,21 @@ footer{
         max-width: 800px;
         margin: 0 auto;
     }
+    
+    footer{
+        flex-direction: row;
+        height: 180px;
+        align-items: center;
+    }
+    
+    .social-media{
+        padding-top: 20px;
+    }
+    
+    .scroll-btn{
+        margin: 50px 30px 50px 20px;
+    }
+    
 }
 
 @media only screen and (min-width: 992px){

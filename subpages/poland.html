@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="If you always imagine yourself in Paris or Barcelona but you don't have money, you're in a good place!">
+    <meta name="keywords" content="travelling, travel, budget travelling, trip, holiday, apps, Poland, Portugal, Iceland, backpack, backpacking, hitchhiking, plane, summer holiday">
+
+    <link rel="stylesheet" href="../mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6a331c31d1.js"></script>
+
+    <title>Travel more for less</title>
+</head>
+<body id="body-content">
+    <header class="top-sub">
+        <div class="top-all top-all-big">
+            <div class="logo-container logo-con-sm">
+                <a href="../index.html"><img src="../img/plane-solid1.svg" alt="logo">
+                    Travellers</a>
+            </div>
+            <nav class="nav-big-size nav-small-size">
+                <div class="nav-btn nav-btn-target">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ol class="nav-content">
+                    <li><a href="../index.html" class="nav-item">Home</a></li>
+                    <li><a href="blog.html" class="nav-item">Blog</a></li>
+                    <li><a href="news.html" class="nav-item">News</a></li>
+                    <li><a href="places.html" class="nav-item">Places to see</a></li>
+                    <li><a href="apps.html" class="nav-item">Apps</a></li>
+                    <li><a href="#" class="nav-item">About me</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <header class="article-header">
+                <div class="breadcrumbs">
+                    <a href="places.html" class="breadcrumbs-last">Places to see</a><span class="breadcrumbs-current-place">></span><span class="breadcrumbs-current-place">Poland</span>
+                </div>
+                <img src="../img/poland-wide.jpg" alt="Poland">
+                <p class="img-info">Author: fotografierende</p>
+
+            </header>
+            <div class="article-title">
+                <h2>Suggested places to see in Poland</h2>
+                <span class="article-info">Posted on: 31 Oct 2019</span>
+                <span class="article-info">By Wojciech Dzwończyk</span>
+            </div>
+            <div class="blog-container">
+                <p class="article-text">First what comes to your mind when you think about Poland is Warsaw or pierogi. I guess that one special word as well but not about it. In this article I would like to show you few places which are worth seeing in this beautiful country. Maybe one day you will visit them.</p>
+
+                <h4 class="article-headings">Cracow</h4>
+
+                <p class="article-text">Let’s start from Cracow. The second capital of Poland in the past. First place which you must see (yes exactly, MUST see) is Wawel castle. The castle was finished in XVII centuries and it was king’s residency. If you watched the Game of thrones and you're not sick of dragons, you can meet one in this place.</p>
+                
+                <div class="article-images">
+                    <div>
+                        <img src="../img/wawel1.jpg" alt="Wawel" class="country-place-img">
+                        <span class="img-info">Author: Roman Polyanyk</span>
+                    </div>
+                </div>
+                
+                <p class="article-text">Second place which I recommend is sukiennice and St. Mary's Church which is next to the first one. Both you can find on market place. The church is famous of oltarz made by German artist Wit Stwosz.</p>
+                
+                <div class="article-images">
+                    <div>
+                        <img src="../img/church1.jpg" alt="St. Mary's Basilica" class="country-place-img">
+                        <p class="img-info">Author: Caio Resende</p>
+                    </div>
+                    <div>
+                        <img src="../img/sukiennice1.jpg" alt="Sukiennice" class="country-place-img">
+                        <p class="img-info">Author: DzidekLasek</p>
+                    </div>
+                </div>
+
+                <h4 class="article-headings">Warsaw</h4>
+
+                <p class="article-text">As a capital of the Poland, it's the biggest city and the most international. You can find here places such as Palace of Culture and Science which was built for Stalin during communism time, Warsaw uprising museum and Wilanów palace.</p>
+                
+                <div class="article-images">
+                    <div>
+                        <img src="../img/palace-of-culture.jpg" alt="Palace of culture and science" class="country-place-img">
+                        <p class="img-info">Author: Wojciech Dzwończyk</p>
+                    </div>
+                    <div>
+                        <img src="../img/uprising-museum1.jpg" alt="Warsaw uprising museum" class="country-place-img">
+                        <p class="img-info">Author: tevenet</p>
+                    </div>
+                    <div>
+                        <img src="../img/wilanow1.jpg" alt="Castle in Wilanów" class="country-place-img">
+                        <p class="img-info">Author: czu_czu_PL</p>
+                    </div>
+                </div>
+                <p class="article-text">In all this two places there is much more to see. I've just wanted to show you what in my opinion you have to see. And of course don't forget about trying pierogi ;) </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-instagram"></i></a></span>
+            <span class="some-item"><a href="#" class="some-link"><i class="fab fa-twitter"></i></a></span>
+            <p>All Copywrite reserved 2019</p>
+        </div>
+        <div class="scroll-btn">
+            <a href="#body-content"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+         jQuery(document).ready(function($){
+            $( ".nav-btn" ).click(function(e) {
+                e.preventDefault();
+                    $(".nav-content").not(".nav-content").slideUp();
+                    $( ".nav-content" ).slideToggle( "slow", function() {
+                });
+             });
+         });
+    </script>
+</body>
+</html>
